@@ -8,10 +8,6 @@ class Day01():
         input_file = Path(__file__).parent / 'input.txt'
         with open(input_file, 'rt') as in_f:
             self.input_lines = in_f.readlines()
-
-    def __repr__(self):
-        # return '\n'.join(self.input_lines)
-        return '\n'.join(self.lists)
     
     def test_print(self):
         print(self.lists_joined)
@@ -58,5 +54,3 @@ day_01 = Day01()
 day_01.extract()
 day_01.transform()
 day_01.load()
-# day_01.test_print()
-
