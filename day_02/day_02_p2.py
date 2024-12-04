@@ -26,10 +26,10 @@ def all_list_once_removed(list_nums):
 #     print(test_list)
 
 
-tested_list = ['Safe' if any(test_list(this_list) for this_list in all_list_once_removed([int(char) for char in line.split()])) else 'Unsafe' for line in lines]
+# tested_list = ['Safe' if any(test_list(this_list) for this_list in all_list_once_removed([int(char) for char in line.split()])) else 'Unsafe' for line in lines]
 # tested_list = ['Safe' if test_list([int(char) for char in line.split()]) else 'Unsafe' for line in lines]
-for nums, test in zip(lines, tested_list):
-    print(f'{nums} - {test}')
+# for nums, test in zip(lines, tested_list):
+#     print(f'{nums} - {test}')
 
 tested_sum = sum([any(test_list(this_list) for this_list in all_list_once_removed([int(char) for char in line.split()])) for line in lines])
 print(f'{tested_sum=}')
